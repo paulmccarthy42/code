@@ -11,12 +11,12 @@ class Pokemon
   end
 
   def display_id
-    puts "This is level #{@level} #{@species}. It is a #{@type1}#{'/' if @type2 != nil}#{@type2} pokemon. It goes by #{@name}"
+    puts "This is level #{@level} #{@species}. It is a #{@type1.capitalize}#{'/' + @type2.capitalize if @type2 != nil} pokemon. It goes by #{@name}"
   end
 end
 
-bulbasaur = Pokemon.new({name: "Bulby", species: "Bulbasaur", type1: :grass, type2: :poison, level: 5})
-charmander = Pokemon.new({name: "Charmy", species: "Charmander", type1: :fire, level: 5})
+bulbasaur = Pokemon.new({name: "Bulby", species: "Bulbasaur", type1: "grass", type2: "poison", level: 5})
+charmander = Pokemon.new({name: "Charmy", species: "Charmander", type1: "fire", level: 5})
 
 bulbasaur.display_id
 puts bulbasaur.name
