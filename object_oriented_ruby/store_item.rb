@@ -10,7 +10,7 @@
 pokemon_1 = {:name => "Bulbasaur", 
   :type1 => "Grass",
   :type2 => "Poison",
-  :starting_level => 5,
+  :level => 5,
   :evolves_into => "Ivysaur",
   :evolves_at => 16
   }
