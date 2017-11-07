@@ -20,3 +20,5 @@ bulbasaur.state_id
 puts bulbasaur.name
 bulbasaur.level += 1
 bulbasaur.state_id
+
+puts "test"
