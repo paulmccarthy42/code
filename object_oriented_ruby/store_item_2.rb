@@ -1,5 +1,5 @@
 class Pokemon
-  attr_reader :name, :species, :type
+  attr_reader :name, :species, :types
   attr_accessor :level
 
   def initialize(name, species, types, level)
@@ -9,16 +9,16 @@ class Pokemon
     @level = level
   end
 
-  def state_id
+  def display_id
     puts "This is level #{@level} #{@species}. It goes by #{@name}"
   end
 end
 
 bulbasaur = Pokemon.new("Bulby", "Bulbasaur", [:grass, :poison], 5)
 
-bulbasaur.state_id
+bulbasaur.display_id
 puts bulbasaur.name
 bulbasaur.level += 1
-bulbasaur.state_id
+bulbasaur.display_id
 
 puts "test"
