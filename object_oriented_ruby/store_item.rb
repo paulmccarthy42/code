@@ -7,7 +7,7 @@
 # - http://alwayscoding.ca/momentos/2012/06/15/ruby-hash-syntax-hashrocket-vs-json-style/
 # - Create a hash in irb where both the keys and values are symbols. Which syntax do you prefer?
 
-pokemon_1 = {:name => "Bulbasaur",
+pokemon_1 = {:name => "Bulbasaur", 
   :type1 => "Grass",
   :type2 => "Poison",
   :starting_level => 5,
@@ -27,12 +27,11 @@ pokemon_3 = {:name => "Venusaur",
   :type2 => "Poison"
   }
 
-
 pokemon_4 = {name: "Charmander",
   type1: "Fire",
   starting_level: 5,
-  evolves_into: => "Charmeleon",
-  evolves_at: => 14
+  evolves_into:  "Charmeleon",
+  evolves_at:  14
   }
 
 pokemon_5 = {:name => "Charmeleon",
@@ -53,3 +52,4 @@ overrated_starter = [pokemon_4, pokemon_5, pokemon_6]
 best_starter.each {|x| puts x[:name]}
 puts ""
 overrated_starter.each {|x| puts x[:name]}
+puts ""
