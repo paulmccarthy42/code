@@ -12,38 +12,32 @@ pokemon_1 = {:name => "Bulbasaur",
   :type2 => "Poison",
   :level => 5,
   :evolves_into => "Ivysaur",
-  :evolves_at => 16
-  }
+  :evolves_at => 16}
 
 pokemon_2 = {:name => "Ivysaur",
   :type1 => "Grass",
   :type2 => "Poison",
   :evolves_into => "Venusaur",
-  :evolves_at => 32
-  }
+  :evolves_at => 32}
 
 pokemon_3 = {:name => "Venusaur",
   :type1 => "Grass",
-  :type2 => "Poison"
-  }
+  :type2 => "Poison"}
 
 pokemon_4 = {name: "Charmander",
   type1: "Fire",
   starting_level: 5,
   evolves_into:  "Charmeleon",
-  evolves_at:  14
-  }
+  evolves_at:  14}
 
 pokemon_5 = {:name => "Charmeleon",
   :type1 => "Fire",
   :evolves_into => "Charizard",
-  :evolves_at => 36
-  }
+  :evolves_at => 36}
 
 pokemon_6 = {:name => "Charizard",
   :type1 => "Fire",
-  :type2 => "Flying"
-  }
+  :type2 => "Flying"}
 
 best_starter = [pokemon_1, pokemon_2, pokemon_3]
 

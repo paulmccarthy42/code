@@ -31,9 +31,9 @@ bulbasaur.level += 1
 charmander.display_id
 
 class GenTwoPokemon < Pokemon
-  def initialize(input_hash)
-    super
-    @gender = input_hash[:gender]
+  def initialize(input_hash, gender)
+    super(input_hash)
+    @gender = gender
   end
 end
 
@@ -41,6 +41,6 @@ end
 togepi = GenTwoPokemon.new({name: "Toga Party",
   species: "Togepi",
   type1: "normal",
-  level: 5,
-  gender: "male"})
+  level: 5},
+  "male")
 togepi.display_id
