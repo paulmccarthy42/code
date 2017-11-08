@@ -58,4 +58,3 @@ manager.print_info
 manager.send_report
 manager.give_all_raises
 manager.give_annual_raise
-p manager
