@@ -1,5 +1,5 @@
 class Vehicle
-  attr_accessor :speed
+  attr_reader :speed, :direction
 
   def initialize
     @speed = 0
@@ -20,6 +20,11 @@ class Vehicle
 end
 
 class Car < Vehicle
+  def initialize
+    super
+    @tank = 1
+  end
+
   def honk_horn
     puts "Beeeeeeep!"
   end
@@ -31,9 +36,9 @@ class Bike < Vehicle
   end
 end
 
-test = Bike.new
+test = Car.new
 
-test.ring_bell
+test.honk_horn
 puts test.speed
 test.accelerate
-puts test.speed
+puts test.direction
