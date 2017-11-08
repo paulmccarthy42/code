@@ -36,7 +36,9 @@ class Manager < Employee
   end
 
   def give_all_raises
-    @employees.each {|x| x.give_annual_raise}
+    @employees.each do |x| 
+      x.give_annual_raise
+    end
   end
 
   def fire_all_employees
@@ -48,7 +50,7 @@ class Manager < Employee
   end
 
   def print_info
-    super
+    super 
     puts "They manage #{@employees.length} people."
   end
 end
