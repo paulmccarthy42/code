@@ -10,10 +10,10 @@ p 'y'
 
 numbers = [1, 2, 4, 2]
 sum = 0
-index = 0
-while index < numbers.length
-  number = numbers[index]
+count = 0
+while count < numbers.length
+  number = numbers[count]
   sum += number
-  index += 1
+  count += 1
 end
 p sum
