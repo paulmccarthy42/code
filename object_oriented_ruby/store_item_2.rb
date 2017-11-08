@@ -15,12 +15,32 @@ class Pokemon
   end
 end
 
-bulbasaur = Pokemon.new({name: "Bulby", species: "Bulbasaur", type1: "grass", type2: "poison", level: 5})
-charmander = Pokemon.new({name: "Charmy", species: "Charmander", type1: "fire", level: 5})
+bulbasaur = Pokemon.new({name: "Bulby",
+  species: "Bulbasaur",
+  type1: "grass",
+  type2: "poison",
+  level: 5})
+charmander = Pokemon.new({name: "Charmy",
+  species: "Charmander",
+  type1: "fire",
+  level: 5})
 
 bulbasaur.display_id
 puts bulbasaur.name
 bulbasaur.level += 1
 charmander.display_id
 
-puts "test"
+class GenTwoPokemon < Pokemon
+  def initialize(input_hash)
+    super
+    @gender = input_hash[:gender]
+  end
+end
+
+
+togepi = GenTwoPokemon.new({name: "Toga Party",
+  species: "Togepi",
+  type1: "normal",
+  level: 5,
+  gender: "male"})
+togepi.display_id

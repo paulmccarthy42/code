@@ -42,9 +42,7 @@ class Manager < Employee
   end
 
   def give_all_raises
-    @employees.each do |x| 
-      x.give_annual_raise
-    end
+    @employees.each {|x| x.give_annual_raise}
   end
 
   def fire_all_employees
