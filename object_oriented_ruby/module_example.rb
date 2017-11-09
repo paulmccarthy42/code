@@ -34,4 +34,3 @@ class Bike
 end
 
 car = Car.new
-car.honk_horn
