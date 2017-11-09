@@ -1,9 +1,11 @@
 require "./pokemon.rb"
 
-class GenTwoPokemon < Pokemon
+module PokemonStore
+  class GenTwoPokemon < Pokemon
 
-  def initialize(input_hash, gender)
-    super(input_hash)
-    @gender = gender
+    def initialize(input_hash, gender)
+      super(input_hash)
+      @gender = gender
+    end
   end
 end
