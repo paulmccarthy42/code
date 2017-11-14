@@ -4,8 +4,3 @@ Rails.application.routes.draw do
   get "/view" => "pages#view_counter"
   get "/bottles" => "pages#display_bottles"
 end
-
-
-
-Array.new
-array = [1,2,3,4]
